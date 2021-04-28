@@ -95,3 +95,5 @@ local.settings.json
 
 #NODE MODULES
 node_modules
+
+.env

@@ -1,7 +1,7 @@
 const mongoCliente = require('mongodb').MongoClient;
 const assert = require('assert');
 const object = require('mongodb').ObjectID;
-const url = 'mongodb://dpspcollections:k2st2dEcAHLzyDTPq52rY6bT99hcC0Gn15C6C4rmk8yT93l4MOC0MpjGkw9HuMn9azs5rMqbfUN3tOw9YZHEvA%3D%3D@dpspcollections.mongo.cosmos.azure.com:10255/?ssl=true';
+const url = process.env.MONGO_CONN;
 
 module.exports = async function (context, req) {
     context.log('Disparador via HTTP com resposta em JSON.');
